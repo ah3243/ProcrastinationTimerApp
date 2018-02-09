@@ -1,0 +1,103 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/studyView"
+        android:background="@color/selected"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:gravity="center"
+        >
+
+        <Chronometer
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/stdTime"
+            android:text="@string/TimeExample"
+            android:gravity="center"
+            android:textSize="@dimen/counterSize"
+            android:textColor="@color/txtColor"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Studying"
+            android:gravity="center"
+            android:textSize="@dimen/titleSize"
+            android:textColor="@color/txtColor"
+            android:layout_below="@id/stdTime"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/procrastinateView"
+        android:background="@color/notSelected"
+
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/studyView"
+        android:gravity="center"
+        >
+
+        <Chronometer
+            android:id="@+id/proTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/TimeExample"
+            android:gravity="center"
+            android:textSize="@dimen/counterSize"
+            android:textColor="@color/txtColor"
+            />
+
+        <TextView
+            android:id="@+id/procrastinateTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Procrastinating"
+            android:textSize="@dimen/titleSize"
+            android:gravity="center"
+            android:textColor="@color/txtColor"
+            android:layout_below="@id/proTime"
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_above="@id/procrastinateView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-30dp"
+        android:gravity="center"
+        >
+        <ImageView
+            android:id="@+id/overlapStopImg"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+
+            android:layout_marginRight="10dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/stop_btn" />
+
+        <ImageView
+            android:id="@+id/overlapPlayImg"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+
+            android:adjustViewBounds="true"
+            android:src="@drawable/play_btn" />
+
+        <ImageView
+            android:id="@+id/overlapPauseImg"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+
+            android:layout_marginLeft="10dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/pause_btn" />
+
+    </LinearLayout>
+</RelativeLayout>

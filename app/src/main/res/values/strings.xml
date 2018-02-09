@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ProcrastinationTimer</string>
+    <string name="contSize">280dp</string>
+
+    <string name="Procrastinating">Procrastinating</string>
+    <string name="Studying">Studying</string>
+    <string name="title_activity_main2">Main2Activity</string>
+
+    <string name="TimeExample">00:00</string>
+</resources>

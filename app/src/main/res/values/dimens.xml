@@ -1,0 +1,5 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="counterSize">40sp</dimen>
+    <dimen name="titleSize">25sp</dimen>
+</resources>
